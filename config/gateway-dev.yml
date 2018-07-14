@@ -58,13 +58,6 @@ spring:
 #    port: 6379
 #    database: 0
   # -------
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
-  instance:
-    prefer-ip-address: true
-
 logging:
   level:
     org.springframework.cloud.gateway: debug
