@@ -19,7 +19,7 @@ spring:
 #            status: 401
       routes:
        - id: test
-         uri: lb://REDSANDALWOOD-TEST
+         uri: lb://TEST-SERVICE
          order: 0
          predicates:
            - Path=/test/**
