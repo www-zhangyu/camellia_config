@@ -1,6 +1,6 @@
 
 server:
-  port: 8752
+  port: 8753
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
