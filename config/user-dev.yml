@@ -2,8 +2,15 @@ server:
   port: 8751
 
 spring:
-  zipkin:
-    base-url: http://localhost:9411
+  sleuth:
+    web:
+      client:
+        enabled: true #打开sleuth客户端功能
+    sampler:
+      probability: 1.0 #将采样比设置为1，全部采样，默认为0.1
+    zipkin:
+      base-url: http://localhost:9411/ #指定链路追踪服务地址
+
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径

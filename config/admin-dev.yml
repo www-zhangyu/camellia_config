@@ -1,24 +1,6 @@
 server:
   port: 7031
 
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    health-check-url-path: /actuator/health
-    prefer-ip-address: true
-#    metadata-map:
-#      user.name: "user"
-#      user.password: "password"
-  client:
-    registryFetchIntervalSeconds: 5
-    serviceUrl:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
-
-#spring:
-#  security:
-#    name: "user"
-#    password: "password"
-
 management:
   endpoints:
     web:
@@ -27,3 +9,8 @@ management:
   endpoint:
     health:
       show-details: always
+
+ eureka:
+  client:
+    service-url:
+      defaultZone: http://172.17.0.2:7001/eureka/,http://172.17.0.3:7002/eureka/
