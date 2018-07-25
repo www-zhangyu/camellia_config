@@ -7,4 +7,9 @@ mybatis:
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
