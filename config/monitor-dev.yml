@@ -1,3 +1,9 @@
-
 server:
   port: 7041
+
+turbine:
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  app-config: user-service,blog-service
+  instanceUrlSuffix: actuator/hystrix.stream
