@@ -6,3 +6,9 @@ mybatis:
   type-aliases-package: com.qk.logserver.entity                  # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
